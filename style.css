@@ -1,0 +1,283 @@
+
+/* Default CSS */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img{
+    max-width:100% ;
+}
+
+/* pricing-table-section */
+.pricing-table-section{
+    background-color: #ebeff2;
+    height: 750px;
+}
+.pricing-content{}
+
+.pricing-header{
+    border-bottom: 3px solid #3763eb; 
+    width:50px; 
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.pricing-plan{
+    padding-top: 10px;
+    background-color: #f7f9ff;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-plan:hover{
+    background-color:#3763eb;
+    color: white;
+    transition: .5s;
+    
+}
+.pricing-plan .plan-one{}
+.pricing-plan .pricing-title{}
+.pricing-plan .pricing-title h4{}
+.pricing-plan .pricing-rate{
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-plan .pricing-rate h1{
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 40px;
+    width: 180px;
+}
+
+.pricing-plan .pricing-details{}
+.pricing-plan .pricing-details p{}
+.pricing-plan .pricing-button{ 
+    margin-top: 10px;
+}
+
+.pricing-plan .pricing-button a{
+    padding: 10px 20px;
+    border: none;
+    background-color: #3763eb;
+    font-size: 14px; 
+    color: white;
+    transition: .5s;
+    border-radius: 25px;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+}
+
+.pricing-plan .pricing-button a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #3763eb;
+    color:white;             
+    z-index: -1;
+    transition: .6s; 
+    border-radius: 25px;
+}
+.pricing-plan .pricing-button a:hover::before{
+    width: 100%;
+}
+.pricing-button a:hover{
+    color:white !important;
+    border-radius: 25px !important;
+}
+
+.pricing-plan:hover .pricing-button a{
+    color:#3763eb;
+    background-color: white;
+    border-radius: 25px;
+} 
+
+.service-box1:hover{
+    background-color: #5252f0;
+	color: white;
+    transition: .5s;
+}
+.box-section{
+    background-image: url() ;
+}
+.service-box1{
+    /*! background-image: url(./img/service-patern.png) ; */
+    padding: 22px 26px;
+    box-shadow: 0px 0px 5px 7px #f9fcff;
+    border-radius: 10px;
+    background-color: #eff3f7;
+}
+
+.image-div1 img {
+	display: inline-block;
+	width: 70px;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #9586e2;
+    margin-bottom: 25px;
+}
+
+/*  service-seciton  */
+.service-seciton{
+    background:linear-gradient(0deg, rgba(2, 2, 2, 0.3), rgba(8, 1, 5, 0.432)), url(./img/free-bg.jpg);
+    height: 600px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.about-image{
+    position: relative; 
+}
+.about-img-text {
+	position: absolute;
+	right: 100px;
+	bottom: 0;
+	background: url(img/shape.png);
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img-text h2{}
+.about-img-text p{}
+
+
+.about-text{}
+
+.finix-text.text-white.text-center {
+	margin-top: 70px;
+}
+.finix-text h6 {
+    color: #e63b3d;
+    font-weight: 400;
+}
+.finix-text h2 {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.finix-text p {
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.service-button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.service-button a{ 
+    padding: 10px 30px;
+    border: none;
+    background-color: white;
+    font-size: 20px; 
+    color: #3763eb;
+    transition: .5s;
+    border-radius: 25px;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+}
+.service-button a::before{ 
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #3763eb;
+    color:white;             
+    z-index: -1;
+    transition: .6s; 
+    border-radius: 25px;
+}
+
+.service-button a:hover::before{
+    width: 100%;
+}
+.service-button a:hover{
+    color:white;
+    border: 1px solid #fff;
+}
+
+/* Contact Section */
+.contact-section{
+    background-color: #ebeff2;
+    height: 425px;
+}
+.contact-section .contact-main-div{
+    background-color: #3763eb;
+    height: 300px;
+    margin: 60px 0;
+    padding: 50px;
+    color: white;
+    border-radius: 5px;
+}
+.contact-section .contact-header{}
+.contact-section .contact-header h3{}
+.contact-section .contact-header p{
+    margin: 30px 0;
+}
+.contact-section .contact-form{}
+.contact-form .contact-inner{
+    border-radius: 25px;
+    border: none;
+    padding: 8px 40px;
+}
+.contact-form .contact-inner-button{
+    padding: 8px 25px;
+    background-color: #3763eb;
+    font-size: 16px; 
+    color: white;
+    transition: .5s;
+    border-radius: 25px; 
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin-left: 30px;
+}
+.contact-form .contact-inner-button button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #3763eb;
+    font-size: 18px; 
+    color: white;
+    transition: .5s;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.contact-section .contact-right{
+    background-color: #ffffff;
+    height: 300px;
+    margin: 60px 0;
+    padding: 30px;
+}
+.contact-section .contact-right h5{}
+.contact-section .contact-right-button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.contact-section .contact-right-button a{
+    padding: 10px 20px;
+    border: none;
+    background-color: #3763eb;
+    font-size: 18px; 
+    color: white;
+    transition: .5s;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+
